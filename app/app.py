@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route("/")
 def home():
     return jsonify({
-        "message": "Hello from Flask in Kubernetes via ArgoCD",
+        "message": "Hello from Flask v1.0.1 in Kubernetes via ArgoCD",
         "hostname": socket.gethostname(),
         "version": os.getenv("APP_VERSION", "1.0.0")
     })

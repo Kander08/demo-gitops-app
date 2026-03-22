@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: demo-flask
-          image: kandemir08/test-registry:1.0.0
+          image: kandemir08/test-registry:1.0.1
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
